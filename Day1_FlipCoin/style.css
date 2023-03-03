@@ -25,7 +25,6 @@ main{
 
     transform: translate(-50%, -50%);
 }
-
 .coin{
     height:100px;
     width: 100px;
@@ -57,7 +56,6 @@ main{
     margin-left: 0px ;
     height: 100px;
     width: 0 !important;
-    
 }
 .result{
     margin-top: 200px;
