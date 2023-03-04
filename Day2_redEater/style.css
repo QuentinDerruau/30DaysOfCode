@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik Iso', cursive;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+    margin: auto;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(20, 5vh);
+}
+.row div{
+    background-color: #123d00;
+    height: 5vh;
+    transition: background-color 50ms ease-out;
+}
+.active{
+    background-color: black !important;
+    transition: background-color 100ms ease-in;
+}
+.food{
+    background-color: red !important;
+}
+.start{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: none;
+    background-color: #123d00;
+    color: white;
+    top: 50%;
+    font-size: 20px;
+    border-radius: 20px;
+    font-family: 'Rubik Iso', cursive;
+}
+.hide {
+    display: none;
+}
+.score{
+    position: absolute;
+    top: 30%;
+}
+.status{
+    position: absolute;
+    top:40%;
+}
