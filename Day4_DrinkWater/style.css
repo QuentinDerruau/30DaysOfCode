@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+html , body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    color: #6ab3f8;
+}
+main{
+    margin: auto;
+    position: absolute;
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;   
+}
+.littleGlass{
+    width: 80px;
+    height:120px;
+    background-color:#76ECFF;
+    border-radius: 0px 0px 20px 20px;
+    margin: 5px;
+    transition: .5s ease;
+    border: 5px solid #6ab3f8 ;
+    cursor: pointer;
+}
+.littleGlass p{
+    margin-top: calc( 120px /2 );
+    color: white;
+    text-align: center;
+
+}
+.active {
+    background-color: skyblue;
+}
+.glass{
+    width: 200px;
+    height: 300px;
+    background-color: skyblue;
+    transform: rotate(180deg);
+    border-radius: 50px 50px 0px 0px;
+    overflow: hidden;
+    margin: auto;    
+    border: 5px solid #6ab3f8 ;
+}
+
+.innerWater{
+    height: 0px;
+    width: 200px;
+    background-color: #76ECFF;
+
+    transition: height 1s ease;
+}
+.innerWater p{
+    transform: rotate(180deg);
+    margin: 0 0 50% 0;
+    color: white;
+    padding: 5px;
+}
+
+.hidden{
+    display: none !important;
+}
