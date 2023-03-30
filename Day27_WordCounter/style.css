@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#input-text {
+    font-size: 20px;
+    padding: 5px 10px;
+    margin-top: 50px;
+    width: 90%;
+    height: 200px;
+    resize: none;
+  }
+  #result {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+  }
