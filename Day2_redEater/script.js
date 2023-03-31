@@ -10,7 +10,7 @@ var inter
 var boardGame = false
 var game = false
 
-// add Key functionnality
+
 document.body.addEventListener("keydown", (e) => {
     const key = event.key;
     switch (key) {
@@ -29,7 +29,7 @@ document.body.addEventListener("keydown", (e) => {
     }
 });
 
-//create movement and check grid limit
+
 function move(){
     switch (direction){
         case "up":
@@ -107,14 +107,14 @@ function move(){
     
 }
 
-//Create Food
+
 function food(){
     x = Math.floor(Math.random() * 19)
     y= Math.floor(Math.random() * 19)
     foodPosition = [x,y];
     document.getElementById('['+x+','+y+']').classList.add("food")  
 }
-// add grid on html
+
 function setBoard (){
     let container = document.createElement('div');
     container.classList.add("container")
@@ -132,7 +132,7 @@ function setBoard (){
     }
 }
 
-// Check if player is on red div
+
 function checkFood(){
     if (player[0] == foodPosition[0] && player[1] == foodPosition[1]){
         document.getElementById('['+foodPosition[0]+','+foodPosition[1]+']').classList.remove("food")
@@ -146,7 +146,7 @@ function checkFood(){
         food()
     }
 }
-// Start Game when click on button
+
 startButton.addEventListener('click', event => {
     startButton.classList.add('hide')
     if (boardGame === false){
@@ -156,7 +156,6 @@ startButton.addEventListener('click', event => {
     foodScore = 0
     score.innerHTML = "Score : " + foodScore 
     statusGame.innerHTML = ""
-    // Set interval for movement each 0.2s
     if (game == false){
         console.log(player)
         game =true

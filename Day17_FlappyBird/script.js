@@ -1,7 +1,7 @@
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
 
-// Variables
+
 var birdX = canvas.width / 4;
 var birdY = canvas.height / 2;
 var birdDY = 0;
@@ -14,14 +14,14 @@ var pipe1Y = getRandomInt(canvas.height - 200);
 var pipe2Y = pipe1Y + pipeGap;
 var score = 0;
 
-// Event listeners
+
 document.addEventListener("keydown", function(event) {
     if (event.keyCode === 32) { // space key
         birdDY = jumpStrength;
     }
 });
 
-// Functions
+
 function drawBird() {
     ctx.beginPath();
     ctx.arc(birdX, birdY, 10, 0, Math.PI * 2);
@@ -82,7 +82,7 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
-// Game loop
+
 var intervalId = setInterval(function() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     drawBird();
